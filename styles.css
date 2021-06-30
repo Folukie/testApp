@@ -1,0 +1,345 @@
+body {
+  background-color: #e5e5e5;
+  padding: 40px 60px;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  line-height: 24px !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  color: #1a1e2c;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #1a1e2c;
+}
+nav {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 150px 1fr 250px;
+  border: 0.5px solid #ebebf9;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 16px 4px rgba(133, 139, 146, 0.06);
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin: 40px 0;
+}
+.innerNav {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0 10px;
+}
+
+.firstNav a,
+.thirdNav a {
+  margin: auto 10px;
+}
+.secNav a {
+  margin: auto 30px;
+}
+.firstNav,
+.secNav {
+  border-right: 1px solid #e7e9f0;
+}
+
+.secNav a {
+  font-weight: 500;
+  font-size: 14px;
+}
+.create {
+  color: #27ae60;
+}
+.all,
+.search {
+  color: #8e94a7;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  border: 0.5px solid #ebebf9;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 16px 4px rgba(137, 143, 150, 0.04);
+  border-radius: 20px;
+  background-color: #fff;
+  margin: 40px 0;
+  padding: 10px 20px;
+  align-items: center;
+}
+.firstHeader {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+.secHeader {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+.secHeader a {
+  color: #00d555;
+}
+.personBox {
+  background: #ffffff;
+  border: 0.5px solid #ebebf9;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 16px 4px rgba(137, 143, 150, 0.04);
+  border-radius: 20px;
+  text-align: center;
+  padding: 50px 0;
+}
+.missingList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 70px 50px;
+}
+.name {
+  color: #27ae60;
+  margin: 4px 0;
+}
+.location {
+  font-size: 12px !important;
+  margin: 4px 0;
+  color: #8e94a7;
+}
+.age {
+  font-size: 13px !important;
+  margin: 4px 0;
+}
+.gender {
+  color: #27ae60;
+  background: #f2f5fe;
+  border-radius: 12px;
+  width: 100px;
+  margin: 25px auto;
+  padding: 12px 0;
+}
+.view {
+  padding: 14px 24px;
+  background: #27ae60;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.seeMoreDiv {
+  text-align: center;
+}
+.seeMore {
+  background: #27ae60;
+  border-radius: 12px;
+  align-items: center;
+  color: #fff;
+  padding: 15px;
+}
+.missingDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 100px 0;
+  margin: 40px 0;
+}
+footer {
+  grid-template-columns: 1fr 230px;
+  display: grid;
+  grid-gap: 0 30px;
+  background-color: #1a1e2c;
+  margin: 60px 0 20px;
+  border: 0.5px solid #ebebf9;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 16px 4px rgba(133, 139, 146, 0.06);
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.backDiv {
+  display: flex;
+  align-items: center;
+}
+.totalDiv {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  grid-gap: 0 30px;
+  align-items: center;
+}
+.backDiv {
+  border-right: 1px solid #e7e9f0;
+}
+.backDiv a {
+  background: #f2f5fe;
+  border-radius: 12px;
+  color: #27ae60;
+  padding: 15px;
+}
+.totalDiv p {
+  color: #fff;
+  font-size: 14px;
+  margin: 2px;
+}
+.totalDiv a {
+  color: #8e94a7;
+  font-size: 12px;
+}
+
+/* LIST.HTML STYLES */
+
+.searchPersons {
+  background: #ffffff;
+  border: 0.5px solid #ebebf9;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 16px 4px rgba(137, 143, 150, 0.04);
+  border-radius: 20px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.searchDiv {
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  width: 999px;
+  background: rgba(231, 233, 240, 0.19);
+  border-radius: 10px;
+  padding: 20px;
+  border: 0;
+}
+input::placeholder {
+  color: #8e94a7;
+  font-size: 14px;
+}
+.close {
+  border-right: 1px solid #e7e9f0;
+  padding: 0 30px;
+}
+.tick {
+  border-left: 1px solid #e7e9f0;
+  padding: 0 30px;
+}
+.searchBtn {
+  align-self: center;
+  background: #27ae60;
+  border-radius: 12px;
+  padding: 14px 24px;
+  color: #fff;
+  margin: 10px 0;
+}
+
+/* CREATE REPORT STYLES */
+.createReportFlex {
+  display: grid;
+  grid-template-columns: 26% 70%;
+  grid-gap: 50px;
+}
+.uploadSection {
+  display: flex;
+  flex-direction: column;
+}
+.uploadDiv {
+  text-align: center;
+  background: #ffffff;
+  border: 0.5px solid #ebebf9;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 16px 4px rgba(133, 139, 146, 0.06);
+  border-radius: 20px;
+  margin: 20px 0;
+  padding: 50px 0;
+}
+span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #8e94a7;
+}
+.uploadBtn {
+  display: flex;
+  align-items: center;
+  background: #27ae60;
+  border-radius: 24px;
+  font-size: 12px;
+  color: #fff;
+  width: 160px;
+  margin: 0 auto;
+  padding: 10px;
+  justify-content: space-around;
+}
+.detailsSection {
+  display: flex;
+  flex-direction: column;
+}
+.relationship {
+  background: #1a1e2c;
+  border: 0.5px solid #ebebf9;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 16px 4px rgba(133, 139, 146, 0.06);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  align-items: center;
+  padding: 20px 0;
+}
+.SM {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 2px 20px;
+  border-radius: 12px;
+}
+.SM p {
+  font-size: 13px;
+}
+.nameFlex {
+  display: flex;
+  align-items: center;
+}
+.nameFlex,
+.date {
+  border-right: 1px solid #e7e9f0;
+  padding-right: 20px;
+}
+.date p {
+  margin: 0 3px;
+  font-size: 14px;
+}
+.dateDate {
+  display: flex;
+}
+.dateDate p {
+  color: #8e94a7;
+  font-size: 12px;
+}
+.nameFlex p {
+  margin: 0 3px;
+}
+.heading {
+  color: #27ae60;
+  font-size: 14px;
+}
+.fullName {
+  font-size: 14px;
+}
+.detailsSectionDiv {
+  margin-bottom: 40px;
+}
+.nameSpot {
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 64px;
+margin: 2px 0;
+  color: #8e94a7;
+}
+.dateDate p{
+  margin: 2px 0;
+}
