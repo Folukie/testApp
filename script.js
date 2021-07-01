@@ -27,13 +27,18 @@ window.onclick = function (event) {
 //toggle
 
 function hamburger(x) {
-  x.classList.toggle("change");
 
-  var x = document.getElementById("mobileMenu");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
+    x.classList.toggle("change");
+
+  var view = document.getElementById("mobileMenu");
+  
+  if (view.style.display === "none") {
+    view.style.display = "block";
+    view.style.transition = "all ease .3s"
+    
+} else {
+    view.style.display = "none";
   }
+  
 }
 
